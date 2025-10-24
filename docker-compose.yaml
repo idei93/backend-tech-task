@@ -1,0 +1,16 @@
+include:
+  - path:
+    - "./app/docker-compose.yaml"
+  - path:
+    - "./mongodb/docker-compose.yaml"
+  - path:
+    - "./rabbitmq/docker-compose.yaml"
+
+
+volumes:
+  mongodb_data:
+    driver: local
+
+networks:
+  events-network:
+    driver: bridge

@@ -1,0 +1,1 @@
+docker exec events-api poetry run pytest tests/ -v
